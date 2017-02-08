@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 //import javax.swing.*;
 public class Grafik1 {
 	
@@ -9,7 +11,7 @@ public class Grafik1 {
 			data[i-1][1] = 2*i*i+i*8+8;
 			j++;
 		}
-		//System.out.println(Arrays.deepToString(data));
+		System.out.println(Arrays.deepToString(data));
 		
 		Graftegner panel = new Graftegner(data);
 	}
