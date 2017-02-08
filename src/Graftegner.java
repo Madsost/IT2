@@ -8,7 +8,7 @@ public class Graftegner extends JPanel {
 	private final int MINX = -10;
 	private final int MINY = -99;
 	private final int MAXY = 1025;
-	private final int STEP = 10;
+	private final int STEP = 100;
 	private int count = 0;
 
 	public Graftegner(int[][] data) {
