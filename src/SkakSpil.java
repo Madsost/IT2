@@ -54,10 +54,9 @@ public class SkakSpil extends JPanel {
 		sqrtWidth = (int) b / 8;
 		sqrtHeight = (int) h / 8;
 
-
 		// Tegner et skakbræt
 		tegnBræt(g);
-		
+
 		for (Brik p : brikker) {
 			tegnBrik(p, g);
 		}
@@ -75,12 +74,14 @@ public class SkakSpil extends JPanel {
 		for (int i = 0; i < 8; i++) {
 			brikker.add(new Bonde((origoX + (i * sqrtWidth)), origoY + sqrtHeight));
 		}
-		brikker.add(new Taarn(origoX,origoY));
-		brikker.add(new Taarn(origoX + 7*sqrtWidth,origoY));
-		brikker.add(new Springer(origoX+1*sqrtWidth,origoY));
-		brikker.add(new Springer(origoX+6*sqrtWidth,origoY));
-		brikker.add(new Løber(origoX+2*sqrtWidth,origoY));
-		brikker.add(new Løber(origoX+5*sqrtWidth,origoY));
+		brikker.add(new Taarn(origoX, origoY));
+		brikker.add(new Taarn(origoX + 7 * sqrtWidth, origoY));
+		brikker.add(new Springer(origoX + 1 * sqrtWidth, origoY));
+		brikker.add(new Springer(origoX + 6 * sqrtWidth, origoY));
+		brikker.add(new Løber(origoX + 2 * sqrtWidth, origoY));
+		brikker.add(new Løber(origoX + 5 * sqrtWidth, origoY));
+		brikker.add(new Dronning(origoX + 3 * sqrtWidth, origoY));
+		brikker.add(new Konge(origoX + 4 * sqrtWidth, origoY));
 		spil.repaint();
 
 		try {
@@ -88,7 +89,7 @@ public class SkakSpil extends JPanel {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		
+
 		brikker.get(2).flytBrik(0, 1);
 		spil.repaint();
 	}
