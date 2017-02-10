@@ -2,7 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.util.ArrayList;
 
-public class Graftegner extends JPanel {
+public class GraftegnerFest extends JPanel {
 	private int[][] data;
 	private final int MAXX = 5000;
 	private final int MINX = -10;
@@ -11,7 +11,7 @@ public class Graftegner extends JPanel {
 	private final int STEP = 100;
 	private int count = 0;
 
-	public Graftegner(int[][] data) {
+	public GraftegnerFest(int[][] data) {
 		this.data = data;
 		JFrame vindue = new JFrame("Nyt vindue");
 		vindue.add(this);

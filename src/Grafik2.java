@@ -19,7 +19,7 @@ public class Grafik2 {
 		}
 		
 		//System.out.println(Arrays.deepToString(data));
-		Graftegner tegning = new Graftegner(data);
+		GraftegnerFest tegning = new GraftegnerFest(data);
 		
 		} catch(IOException e){ e.printStackTrace();}
 	}

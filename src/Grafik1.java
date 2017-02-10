@@ -13,6 +13,6 @@ public class Grafik1 {
 		}
 		//System.out.println(Arrays.deepToString(data));
 		
-		Graftegner panel = new Graftegner(data);
+		GraftegnerFest panel = new GraftegnerFest(data);
 	}
 }
