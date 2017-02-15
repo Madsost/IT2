@@ -19,7 +19,6 @@ public class GraftegnerFest extends JPanel {
 		vindue.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		vindue.setVisible(true);
 	}
-
 	public void paintComponent(Graphics g) {
 		super.paintComponent(g);
 		//System.out.println("Ændring: "+count);

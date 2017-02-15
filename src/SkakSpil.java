@@ -1,7 +1,5 @@
 import javax.swing.*;
-
 import brikker.*;
-
 import java.awt.*;
 import java.util.ArrayList;
 
@@ -32,7 +30,7 @@ public class SkakSpil extends JPanel {
 		for (int i = 0; i < 8; i++) {
 			for (int j = 0; j < 8; j++) {
 				if (n % 2 == 0)
-					g.setColor(Color.BLACK);
+					g.setColor(Color.GRAY);
 				else
 					g.setColor(Color.WHITE);
 				n++;
@@ -57,10 +55,11 @@ public class SkakSpil extends JPanel {
 
 		// Tegner et skakbræt
 		tegnBræt(g);
+		Brik.setValues(sqrtHeight, sqrtWidth, origoX, origoY);
 		
 		for (Brik p : brikker) {
 			tegnBrik(p, g);
-		}
+		}	
 	}
 
 	public static void main(String[] args) {
@@ -70,17 +69,18 @@ public class SkakSpil extends JPanel {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		Brik.setValues(sqrtHeight, sqrtWidth, origoX, origoY);
 		brikker = new ArrayList<>();
 		for (int i = 0; i < 8; i++) {
 			brikker.add(new Bonde((origoX + (i * sqrtWidth)), origoY + sqrtHeight));
 		}
+		System.out.println("Hej");
 		brikker.add(new Taarn(origoX,origoY));
 		brikker.add(new Taarn(origoX + 7*sqrtWidth,origoY));
 		brikker.add(new Springer(origoX+1*sqrtWidth,origoY));
 		brikker.add(new Springer(origoX+6*sqrtWidth,origoY));
 		brikker.add(new Løber(origoX+2*sqrtWidth,origoY));
 		brikker.add(new Løber(origoX+5*sqrtWidth,origoY));
+		
 		spil.repaint();
 
 		try {
@@ -88,6 +88,7 @@ public class SkakSpil extends JPanel {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+		System.out.println("HEJ2");
 		
 		brikker.get(2).flytBrik(0, 1);
 		spil.repaint();
