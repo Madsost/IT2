@@ -80,6 +80,8 @@ public class SkakSpil extends JPanel {
 		brikker.add(new Springer(origoX+6*sqrtWidth,origoY));
 		brikker.add(new Løber(origoX+2*sqrtWidth,origoY));
 		brikker.add(new Løber(origoX+5*sqrtWidth,origoY));
+		brikker.add(new Dronning(origoX+3*sqrtWidth,origoY));
+		brikker.add(new Konge(origoX+4*sqrtWidth,origoY));
 		
 		spil.repaint();
 
@@ -88,7 +90,6 @@ public class SkakSpil extends JPanel {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		System.out.println("HEJ2");
 		
 		brikker.get(2).flytBrik(0, 1);
 		spil.repaint();
