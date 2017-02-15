@@ -8,9 +8,9 @@ import java.util.Arrays;
 public class GraftegnerFest extends JPanel {
 	private int[][] data;
 	private final int MAXX = 5000;
-	private final int MINX = -10;
+	private final int MINX = -100;
 	private final int MINY = -99;
-	private final int MAXY = 1025;
+	private final int MAXY = 1100;
 	private final int STEP = 100;
 	private int count = 0;
 
@@ -59,6 +59,7 @@ public class GraftegnerFest extends JPanel {
 					(int)((double)data[j][0]), 
 					(int)(((double)data[j][1])));
 		}
+		// Dette bruger 
 		/*
 		g.drawLine((int) origoX, 0, (int) origoX, (int) h - 1);
 		g.drawLine(0, (int) origoY, (int) b - 1, (int) origoY);
