@@ -1,6 +1,9 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.geom.AffineTransform;
+import java.awt.geom.NoninvertibleTransformException;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class GraftegnerFest extends JPanel {
 	private int[][] data;
@@ -19,16 +22,38 @@ public class GraftegnerFest extends JPanel {
 		vindue.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		vindue.setVisible(true);
 	}
+	
+
 	public void paintComponent(Graphics g) {
 		super.paintComponent(g);
 		//System.out.println("Ændring: "+count);
 		//count++;
+		Graphics2D g2 = (Graphics2D) g;
+		AffineTransform af = new AffineTransform();
+		
 		double h = getHeight() - 2;
 		double b = getWidth() - 2;
 		double deltaX = b / (MAXX - MINX);
 		double deltaY = h / (MAXY - MINY);
-		double origoX = -(double) MINX * deltaX;
-		double origoY = h + (double) (MINY * deltaY);
+		double origoX = -(double) MINX*deltaX;
+		double origoY = h + (double) (MINY)*deltaY;
+		/*double origoX = 2;
+		double origoY = h;
+
+		af.setToScale(deltaX, deltaY);
+		g2.transform(af);
+		g2.drawLine(0, 0, 0, getWidth());
+		g2.drawLine(0, 0, getWidth(), getHeight() );
+		af.setToTranslation(origoX, origoY);
+		g2.transform(af);
+				
+		for (int j = 1; j < data.length-1; j++) {
+			g2.drawLine((int)((double)data[j - 1][0]),
+					(int)(((double)data[j - 1][1])),
+					(int)((double)data[j][0]), 
+					(int)(((double)data[j][1])));
+		}*/
+		
 		g.drawLine((int) origoX, 0, (int) origoX, (int) h - 1);
 		g.drawLine(0, (int) origoY, (int) b - 1, (int) origoY);
 		for (int i = (MINX / STEP) * STEP; i <= MAXX; i += STEP) {
@@ -47,4 +72,5 @@ public class GraftegnerFest extends JPanel {
 					(int)(origoY-((double)data[j][1] * deltaY)));
 		}
 	}
+	
 }

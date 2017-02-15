@@ -73,7 +73,7 @@ public class SkakSpil extends JPanel {
 		for (int i = 0; i < 8; i++) {
 			brikker.add(new Bonde((origoX + (i * sqrtWidth)), origoY + sqrtHeight));
 		}
-		System.out.println("Hej");
+		
 		brikker.add(new Taarn(origoX,origoY));
 		brikker.add(new Taarn(origoX + 7*sqrtWidth,origoY));
 		brikker.add(new Springer(origoX+1*sqrtWidth,origoY));
