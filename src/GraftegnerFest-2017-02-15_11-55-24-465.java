@@ -37,29 +37,29 @@ public class GraftegnerFest extends JPanel {
 		double deltaY = h / (MAXY - MINY);
 		double origoX = -(double) MINX*deltaX;
 		double origoY = h + (double) (MINY)*deltaY;
-
+		/*double origoX = 2;
+		double origoY = h;
+		
+		
+		
+		af.setToScale(deltaX, deltaY);
+		g2.transform(af);
+		g2.drawLine(0, 0, 0, getWidth());
+		g2.drawLine(0, 0, getWidth(), getHeight() );
 		af.setToTranslation(origoX, origoY);
 		g2.transform(af);
-		af.setToScale(deltaX, -deltaY);
-		g2.transform(af);
 		
-		g2.setColor(Color.BLUE);
-		for (int i = (MINX / STEP) * STEP; i <= MAXX; i += STEP) {
-			g2.drawLine( i, - 5, i, 5);
-		}
-		for (int i = (MINY / STEP) * STEP; i <= MAXY; i += STEP) {
-			g.drawLine(- 5, i , 5, i );
-		}
-		g2.drawLine(MINX, 0, MAXX, 0);	
-		g2.drawLine(0, MINY, 0, MAXY);
-		g2.setColor(Color.BLACK);
+		
+		
 		for (int j = 1; j < data.length-1; j++) {
 			g2.drawLine((int)((double)data[j - 1][0]),
 					(int)(((double)data[j - 1][1])),
 					(int)((double)data[j][0]), 
 					(int)(((double)data[j][1])));
-		}
-		/*
+		}*/
+		
+		
+		
 		g.drawLine((int) origoX, 0, (int) origoX, (int) h - 1);
 		g.drawLine(0, (int) origoY, (int) b - 1, (int) origoY);
 		for (int i = (MINX / STEP) * STEP; i <= MAXX; i += STEP) {
@@ -76,7 +76,7 @@ public class GraftegnerFest extends JPanel {
 					(int)(origoY-((double)data[j - 1][1] * deltaY)),
 					(int)((double)data[j][0] * deltaX+origoX), 
 					(int)(origoY-((double)data[j][1] * deltaY)));
-		}*/
+		}
 	}
 	
 }
