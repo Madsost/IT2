@@ -3,6 +3,8 @@ import java.text.SimpleDateFormat;
 import java.time.LocalTime;
 import java.util.Calendar;
 import javax.swing.*;
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class TegnUr extends JPanel{
 	
@@ -26,6 +28,15 @@ public class TegnUr extends JPanel{
 		vindue.setSize(500, 500);
 		vindue.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		vindue.setVisible(true);
+		Timer timer = new Timer();
+		timer.scheduleAtFixedRate(new TimerTask(){
+
+			@Override
+			public void run() {
+				repaint();
+			}
+		
+		}, 0, 10);
 	}
 	
 	/**
@@ -109,7 +120,7 @@ public class TegnUr extends JPanel{
 	public void paintComponent(Graphics g){
 		super.paintComponent(g);
 		
-		System.out.println("HEJ");
+		//System.out.println("HEJ");
 		
 		h = getHeight()-50;
 		b = getWidth()-50;
@@ -130,9 +141,9 @@ public class TegnUr extends JPanel{
 	
 	public static void main(String[] args) {
 		TegnUr nu = new TegnUr();
-		for(int i = 0; i<40000; i++){
+		/*for(int i = 0; i<40000; i++){
 			nu.repaint();
 			try{ Thread.sleep(10); } catch(Exception e){ System.err.println("Der skete en fejl"); }
-		}
+		}*/
 	}
 }
