@@ -36,7 +36,7 @@ public class TegnUr extends JPanel{
 				repaint();
 			}
 		
-		}, 0, 10);
+		}, 0, 40);
 	}
 	
 	/**
