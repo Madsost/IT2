@@ -1,4 +1,4 @@
-package matador;
+
 
 public class Rederi extends Grund{
 	Spiller ejer = null;

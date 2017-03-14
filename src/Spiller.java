@@ -1,4 +1,4 @@
-package matador;
+
 
 public class Spiller {
 	String navn = "";

@@ -1,4 +1,4 @@
-package matador;
+
 /** Superklasse for alle matadorspillets felter */
 public class Felt {
 	String navn = "";

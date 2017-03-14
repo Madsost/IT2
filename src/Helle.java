@@ -1,4 +1,4 @@
-package matador;
+
 
 public class Helle extends Felt{
 	double gevinst = 0;

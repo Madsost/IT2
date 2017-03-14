@@ -9,9 +9,9 @@ import java.util.Timer;
 
 public class Bold extends JPanel implements KeyListener {
 
-	private int radius = 100;
-	private float speedX = 4;
-	private float speedY = 6;
+	private int radius = 50;
+	private float speedX = 0;
+	private float speedY = 0;
 	private float x = radius + 50;
 	private float y = radius + 20;
 	private Color color;

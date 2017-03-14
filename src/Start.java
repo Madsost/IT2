@@ -1,4 +1,4 @@
-package matador;
+
 
 public class Start extends Felt{
 	double gevinst = 0;

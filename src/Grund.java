@@ -1,4 +1,4 @@
-package matador;
+
 
 public class Grund extends Felt{
 	Spiller ejer = null;

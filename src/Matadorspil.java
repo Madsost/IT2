@@ -1,4 +1,4 @@
-package matador;
+
 import java.util.*;
 
 public class Matadorspil {
