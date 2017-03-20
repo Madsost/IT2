@@ -15,12 +15,12 @@ public class Person {
 	}
 	
 	public String toString(){
-		return fornavn+" "+efternavn+" ("+alder+" år)";
+		return fornavn+" "+efternavn+" ("+alder+" ï¿½r)";
 	}
 	
-	public void præsentation(){
+	public void prÃ¦sentation(){
 		if (alder<5) System.out.println("agyyy!");
-		else System.out.println("Jeg hedder "+fornavn+" og jeg er "+alder+" år.");
+		else System.out.println("Jeg hedder "+fornavn+" og jeg er "+alder+" ï¿½r.");
 	}
 	
 	public void hils(Person andenPerson){
@@ -29,7 +29,7 @@ public class Person {
 		else System.out.println("Goddag, hr. "+andenPerson.efternavn+". ");
 	}
 	
-	public void tilføjNyKonto(Person p){
+	public void tilfÃ¸jNyKonto(Person p){
 		new Konto(p);
 	}
 	
@@ -42,7 +42,7 @@ public class Person {
 			System.out.println(antalKonti + ": "+k.saldo);
 		}
 		if(bil!=null){
-			System.out.println("Der var også en bil med værdien " +bil.pris);
+			System.out.println("Der var ogsï¿½ en bil med vï¿½rdien " +bil.pris);
 			total+=bil.pris;
 		}
 		return total;
@@ -53,16 +53,16 @@ public class Person {
 			Person p = new Person("Anders","Henriksen",28);
 			Konto k = new Konto(p);
 			p.formue();
-			k.overførsel(1000);
+			k.overfÃ¸rsel(1000);
 			p.formue();
 			Konto k2 = new Konto(p);
 			Konto k3 = new Konto(p);
-			k2.overførsel(500);
-			k3.overførsel(483);
+			k2.overfÃ¸rsel(500);
+			k3.overfÃ¸rsel(483);
 			for(Konto a : p.konti){
 				a.udskrivPosteringer();
 			}
-			p.bil = new Bil("VOLVO","rød",12000);
+			p.bil = new Bil("VOLVO","rï¿½d",12000);
 			System.out.println(p.bil.toString());
 			int i = p.formue();
 			System.out.println("Saldo er " +i);

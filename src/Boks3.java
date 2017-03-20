@@ -1,47 +1,47 @@
 /** Opgave 2 fra 4.3.2 */
 public class Boks3 {
-	private double længde;
+	private double lÃ¦ngde;
 	private double bredde;
-	private double højde;
+	private double hÃ¸jde;
 	private double massefylde;
 	
-	/** Konstruktør der opretter en standardboks */
+	/** Konstruktï¿½r der opretter en standardboks */
 	public Boks3(){
 		System.out.println("Standardboks oprettes");
-		længde = 10;
+		lÃ¦ngde = 10;
 		bredde = 10;
-		højde = 10;
+		hÃ¸jde = 10;
 		massefylde = 1;
 	}
 	
-	/** En anden konstruktør der får bredde, højde og længde  */
+	/** En anden konstruktï¿½r der fï¿½r bredde, hï¿½jde og lï¿½ngde  */
 	public Boks3(double lgd, double b, double h, double m){
 		System.out.println("Boks oprettes med lgd="+ lgd+" b="+b+" h="+h);
-		sætMål(lgd,b,h);
-		sætMasse(m);
+		sÃ¦tMÃ¥l(lgd,b,h);
+		sÃ¦tMasse(m);
 	}
 	
-	/** Sætter boksens bredde, højde og længde */
-	public void sætMål(double lgd, double b, double h){
+	/** Sï¿½tter boksens bredde, hï¿½jde og lï¿½ngde */
+	public void sÃ¦tMÃ¥l(double lgd, double b, double h){
 		if (lgd <=0 || b<=0 || h<=0)
 		{
-			System.out.println("Ugyldige mål. Bruger standardmål");
-			længde = 10;
+			System.out.println("Ugyldige mÃ¥l. Bruger standardmï¿½l");
+			lÃ¦ngde = 10;
 			bredde = 10;
-			højde = 10;
+			hÃ¸jde = 10;
 			massefylde = 1;
 		}
 		else {
-			længde = lgd;
+			lÃ¦ngde = lgd;
 			bredde = b;
-			højde = h;
+			hÃ¸jde = h;
 		}
 		}
 	
-	/** Sætter boksens massefylde */
-	public void sætMasse(double m){
+	/** Sï¿½tter boksens massefylde */
+	public void sÃ¦tMasse(double m){
 		if (m<=0) {
-			System.out.println("Ugyldig massefylde. Bruger standardmål");
+			System.out.println("Ugyldig massefylde. Bruger standardmï¿½l");
 			massefylde = 1;
 		}
 		else massefylde = m;
@@ -49,14 +49,14 @@ public class Boks3 {
 	
 	/** udregner boksens rumfang */
 	public double volumen(){
-		double vol = længde*bredde*højde;
+		double vol = lÃ¦ngde*bredde*hÃ¸jde;
 		return vol;
 	}
 	
-	/** udregner boksens vægt */
-	public double vægt(){
-		double vægt = længde*bredde*højde*massefylde;
-		return vægt;
+	/** udregner boksens vï¿½gt */
+	public double vÃ¦gt(){
+		double vÃ¦gt = lÃ¦ngde*bredde*hÃ¸jde*massefylde;
+		return vÃ¦gt;
 	}
 	
 	/** Klasse til at teste programmet */ 
@@ -65,11 +65,11 @@ public class Boks3 {
 			Boks3 enBoks, enAndenBoks;
 			enBoks = new Boks3();
 			System.out.println("Boks 1 volumen: " + enBoks.volumen());
-			System.out.println("Boks 1 vægt: " + enBoks.vægt());
+			System.out.println("Boks 1 vï¿½gt: " + enBoks.vÃ¦gt());
 			
 			enAndenBoks = new Boks3(10,20,10,2);
 			System.out.println("Boks 2 volumen: " + enAndenBoks.volumen());
-			System.out.println("Boks 2 vægt: "  + enAndenBoks.vægt());
+			System.out.println("Boks 2 vï¿½gt: "  + enAndenBoks.vÃ¦gt());
 		}
 	}
 }

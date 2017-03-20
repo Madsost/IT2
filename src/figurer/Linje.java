@@ -1,9 +1,9 @@
 package figurer;
 
 public class Linje extends Figur{
-	public int længde = 0;
+	public int lÃ¦ngde = 0;
 	
-	public Linje(int længde){
-		this.længde = længde;
+	public Linje(int lÃ¦ngde){
+		this.lÃ¦ngde = lÃ¦ngde;
 	}
 }

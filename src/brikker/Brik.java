@@ -17,8 +17,8 @@ public class Brik {
 		this.posY = posY;
 	}
 	
-	public static void setValues(int højde, int bredde, int x, int y){
-		sqrtHeight = højde;
+	public static void setValues(int hÃ¸jde, int bredde, int x, int y){
+		sqrtHeight = hÃ¸jde;
 		sqrtWidth = bredde;
 		origoX = x;
 		origoY = y;

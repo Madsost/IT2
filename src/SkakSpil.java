@@ -25,7 +25,7 @@ public class SkakSpil extends JPanel {
 		g.drawImage(brik.billede, brik.getX(), brik.getY(), sqrtWidth, sqrtHeight, this);
 	}
 
-	public void tegnBræt(Graphics g) {
+	public void tegnBrÃ¦t(Graphics g) {
 		int n = 0;
 		for (int i = 0; i < 8; i++) {
 			for (int j = 0; j < 8; j++) {
@@ -53,8 +53,8 @@ public class SkakSpil extends JPanel {
 		sqrtHeight = (int) h / 8;
 
 
-		// Tegner et skakbræt
-		tegnBræt(g);
+		// Tegner et skakbrï¿½t
+		tegnBrÃ¦t(g);
 		Brik.setValues(sqrtHeight, sqrtWidth, origoX, origoY);
 		
 		for (Brik p : brikker) {
@@ -78,8 +78,8 @@ public class SkakSpil extends JPanel {
 		brikker.add(new Taarn(origoX + 7*sqrtWidth,origoY));
 		brikker.add(new Springer(origoX+1*sqrtWidth,origoY));
 		brikker.add(new Springer(origoX+6*sqrtWidth,origoY));
-		brikker.add(new Løber(origoX+2*sqrtWidth,origoY));
-		brikker.add(new Løber(origoX+5*sqrtWidth,origoY));
+		brikker.add(new LÃ¸ber(origoX+2*sqrtWidth,origoY));
+		brikker.add(new LÃ¸ber(origoX+5*sqrtWidth,origoY));
 		brikker.add(new Dronning(origoX+3*sqrtWidth,origoY));
 		brikker.add(new Konge(origoX+4*sqrtWidth,origoY));
 		

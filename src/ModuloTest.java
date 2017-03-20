@@ -1,9 +1,9 @@
 
 public class ModuloTest {
 
-	public boolean fortsæt()
+	public boolean fortsÃ¦t()
 	{
-		String svar = javax.swing.JOptionPane.showInputDialog("Fortsæt?","ja");
+		String svar = javax.swing.JOptionPane.showInputDialog("Fortsï¿½t?","ja");
 		if (svar.equals("ja")) return true;
 		else return false;
 	}
@@ -21,7 +21,7 @@ public class ModuloTest {
 			int temp = (i + 1) % str;
 			System.out.println(i + " " + temp);
 			i++;
-			//fort = m.fortsæt();
+			//fort = m.fortsï¿½t();
 		}
 		*/
 	}

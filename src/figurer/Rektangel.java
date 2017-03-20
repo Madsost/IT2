@@ -1,21 +1,21 @@
 package figurer;
 
 public class Rektangel extends Figur{
-	public int højde = 0;
+	public int hÃ¸jde = 0;
 	public int bredde = 0;
 	
-	public Rektangel(int højde, int bredde){
-		this.højde = højde;
+	public Rektangel(int hÃ¸jde, int bredde){
+		this.hÃ¸jde = hÃ¸jde;
 		this.bredde = bredde;
 	}
 	
 	public double beregnAreal(){
-		double areal = højde*bredde;
+		double areal = hÃ¸jde*bredde;
 		return areal;
 	}
 	
 	public double beregnOmkreds(){
-		double omkreds = 2*højde+2*bredde;
+		double omkreds = 2*hÃ¸jde+2*bredde;
 		return omkreds;
 	}
 

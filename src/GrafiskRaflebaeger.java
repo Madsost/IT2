@@ -7,7 +7,7 @@ public class GrafiskRaflebaeger extends Raflebaeger implements Tegnbar{
 
 	}
 
-	public void sætPosition(int x, int y) {
+	public void sÃ¦tPosition(int x, int y) {
 		// TODO Auto-generated method stub
 		
 	}

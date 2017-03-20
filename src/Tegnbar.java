@@ -1,7 +1,7 @@
 import java.awt.*;
 
 public interface Tegnbar {
-	public void sætPosition(int x, int y);
+	public void sÃ¦tPosition(int x, int y);
 	
 	public void tegn(Graphics g);
 }

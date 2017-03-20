@@ -12,7 +12,7 @@ public class Konto {
 		saldo=0;
 	}
 	
-	public void overførsel(int kroner){
+	public void overfÃ¸rsel(int kroner){
 		saldo = saldo + kroner;
 		Postering p = new Postering("Besked",kroner,new Date());
 		posteringer.add(p);

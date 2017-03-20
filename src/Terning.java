@@ -2,24 +2,24 @@ import java.util.ArrayList;
 
 /** En klasse der beskriver 6-sidede terninger */
 public class Terning {
-	public int værdi;
+	public int vÃ¦rdi;
 	
-	/** konstruktør der opretter en terning */
+	/** konstruktï¿½r der opretter en terning */
 	public Terning(){
 		kast();
 	}
 	
-	/** Kaster terningen, så den får en anden værdi */
+	/** Kaster terningen, sï¿½ den fï¿½r en anden vï¿½rdi */
 	public void kast(){
-		// find en tilfældig side
-		double tilfældigtTal = Math.random();
-		if(tilfældigtTal==1.0) værdi = 6;
-		else værdi = (int) (tilfældigtTal * 6) + 1;
+		// find en tilfï¿½ldig side
+		double tilfÃ¦ldigtTal = Math.random();
+		if(tilfÃ¦ldigtTal==1.0) vÃ¦rdi = 6;
+		else vÃ¦rdi = (int) (tilfÃ¦ldigtTal * 6) + 1;
 	}
 	
 	/** Giver en beskrivelse af terningen som en streng */
 	public String toString(){
-		String svar = ""+værdi;
+		String svar = ""+vÃ¦rdi;
 		return svar;
 	}
 	
@@ -43,16 +43,16 @@ public class Terning {
 			while ( true ){
 				for (Terning t : terninger){
 					t.kast();
-					if (t.værdi == 6) antalSeksere++;
+					if (t.vÃ¦rdi == 6) antalSeksere++;
 				}
 				antalKast++;
 				int sum = 0;
 				for (Terning t : terninger){
-					sum += t.værdi;
+					sum += t.vÃ¦rdi;
 				}
 				System.out.println(terninger.toString());
 				System.out.print("Slag nr: " + antalKast +", ");
-				System.out.println("summen af øjnene i slaget var: " + sum);
+				System.out.println("summen af Ã¸jnene i slaget var: " + sum);
 				System.out.println("Antal seksere: "+antalSeksere +" \n");
 				antalSeksere = 0;
 			}

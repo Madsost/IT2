@@ -3,9 +3,9 @@ public class LudoTerning extends Terning {
 	
 	/** Giver en beskrivelse af terningen som en streng */
 	public String toString(){
-		String svar = ""+værdi;
-		if (værdi == 3) svar = "*";
-		if (værdi == 4) svar = "globus";
+		String svar = ""+vÃ¦rdi;
+		if (vÃ¦rdi == 3) svar = "*";
+		if (vÃ¦rdi == 4) svar = "globus";
 		return svar;
 	}
 	public static class TestLudoTerning{

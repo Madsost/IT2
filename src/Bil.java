@@ -18,7 +18,7 @@ public class Bil extends Transportmiddel{
 		return this.pris;
 	}
 	
-	public void enSætterSigInd(Person p){
+	public void enSÃ¦tterSigInd(Person p){
 		personerIBil.add(p);
 	}
 	

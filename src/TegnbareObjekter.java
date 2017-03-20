@@ -4,13 +4,13 @@ import javax.swing.*;
 
 public class TegnbareObjekter extends JPanel{
 	ArrayList<Tegnbar> tegnbare = new ArrayList<>();
-	GrafiskRaflebaeger bæger = new GrafiskRaflebaeger();
+	GrafiskRaflebaeger bÃ¦ger = new GrafiskRaflebaeger();
 	
-	public void sætPositioner(){
+	public void sÃ¦tPositioner(){
 		for( Tegnbar t : tegnbare){
 			int x = (int) (Math.random()*200);
 			int y = (int) (Math.random()*200);
-			t.sætPosition(x, y);
+			t.sÃ¦tPosition(x, y);
 		}
 	}
 	
@@ -21,21 +21,21 @@ public class TegnbareObjekter extends JPanel{
 		
 		GrafiskTerning t;
 		t = new GrafiskTerning();
-		bæger.tilføj(t);
+		bÃ¦ger.tilfÃ¸j(t);
 		tegnbare.add(t);
 
 		t = new GrafiskTerning();
-		bæger.tilføj(t);
+		bÃ¦ger.tilfÃ¸j(t);
 		tegnbare.add(t);
 		
-		tegnbare.add(bæger);
-		sætPositioner();
+		tegnbare.add(bÃ¦ger);
+		sÃ¦tPositioner();
 	}
 	
 	public void paintComponent(Graphics g){
 		super.paintComponent(g);
 		
-		sætPositioner();
+		sÃ¦tPositioner();
 		
 		for(Tegnbar t: tegnbare) t.tegn(g);
 	}

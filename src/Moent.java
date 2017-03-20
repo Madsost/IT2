@@ -1,19 +1,19 @@
-/** Klasse, der skal repræsentere en mønt */
+/** Klasse, der skal reprï¿½sentere en mï¿½nt */
 public class Moent {
 	private int side;
 	
-	/** Konstruktør, der opretter en mønt og tildeler den en side */
+	/** Konstruktï¿½r, der opretter en mï¿½nt og tildeler den en side */
 	public Moent(){
 		kast();
 	}
 	
-	/** Kaster mønten og tildeler den et tilfældigt tal - enten 1 eller 0 */
+	/** Kaster mï¿½nten og tildeler den et tilfï¿½ldigt tal - enten 1 eller 0 */
 	public int kast(){
-		double tilfældigtTal = Math.random()*2;
-		return side = (int) (tilfældigtTal);
+		double tilfÃ¦ldigtTal = Math.random()*2;
+		return side = (int) (tilfÃ¦ldigtTal);
 	}
 	
-	/** Tjekker om mønten landede med krone-siden opad */
+	/** Tjekker om mï¿½nten landede med krone-siden opad */
 	public boolean krone(){
 		if (side == 1) return true;
 		else if (side == 0) return false;

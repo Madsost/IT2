@@ -4,7 +4,7 @@ public class GrafiskTerning extends Terning implements Tegnbar{
 	
 	int x,y;
 	
-	public void sætPosition(int x, int y) {
+	public void sÃ¦tPosition(int x, int y) {
 		this.x = x;
 		this.y = y;
 	}
@@ -14,14 +14,14 @@ public class GrafiskTerning extends Terning implements Tegnbar{
 	}
 
 	public void tegn(Graphics g) {
-		int ø = værdi;
+		int t = this.vÃ¦rdi;
 		g.drawRect(x, y, 30, 30);
 		
-		if(ø == 1) ci(g,0,0);
-		if(ø == 2){ ci(g,0,0); ci(g,2,2);}
-		if(ø == 3){ ci(g,0,0); ci(g,1,1); ci(g,2,2);}
-		if(ø == 4){ ci(g,0,0); ci(g,0,2); ci(g,2,0); ci(g,2,2);}
-		if(ø == 5){ ci(g,0,0); ci(g,0,2); ci(g,2,0); ci(g,2,2); ci(g,1,1);}
+		if(t == 1) ci(g,0,0);
+		if(t == 2){ ci(g,0,0); ci(g,2,2);}
+		if(t == 3){ ci(g,0,0); ci(g,1,1); ci(g,2,2);}
+		if(t == 4){ ci(g,0,0); ci(g,0,2); ci(g,2,0); ci(g,2,2);}
+		if(t == 5){ ci(g,0,0); ci(g,0,2); ci(g,2,0); ci(g,2,2); ci(g,1,1);}
 		else { ci(g,0,0); ci(g,0,1); ci(g,0,2); ci(g,2,0); ci(g,2,1); ci(g,2,2);}
 	}
 

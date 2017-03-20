@@ -1,6 +1,6 @@
 package transportmidler;
 /**
- * Superklasse, der repræsenterer et transportmiddel.
+ * Superklasse, der reprï¿½senterer et transportmiddel.
  */
 
 /**
@@ -14,7 +14,7 @@ public class Transportmiddel {
 	public int tilbagelagtKm = 0;
 	public double pris = 0;
 	
-	public void bevæg(int antalKilometer){
+	public void bevÃ¦g(int antalKilometer){
 		tilbagelagtKm += antalKilometer;
 	}
 	

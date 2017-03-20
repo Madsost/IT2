@@ -8,7 +8,7 @@ public class FigurTest {
 		Rektangel r = new Rektangel(2,5);
 		System.out.println("Rektangel: "+r.beregnAreal()+"\nRektangel omkreds: "+r.beregnOmkreds());
 		System.out.println("Cirkel areal: "+c.beregnAreal()+"\nCirkel omkreds: "+c.beregnOmkreds());
-		System.out.println("Linje længde: "+l.længde+"\nLinje omkreds: "+l.beregnOmkreds());
+		System.out.println("Linje lï¿½ngde: "+l.lÃ¦ngde+"\nLinje omkreds: "+l.beregnOmkreds());
 		System.out.println("Punkt ("+p.x+","+p.y+")\n"+"Punkt omkreds: "+p.beregnOmkreds());
 	}
 

@@ -2,16 +2,16 @@ import java.util.Date;
 
 public class Postering {
 	public String besked = "";
-	public int indsatBeløb = 0;
+	public int indsatBelÃ¸b = 0;
 	public Date dato;
 	
-	public Postering(String besked, int indsatBeløb, Date dato){
+	public Postering(String besked, int indsatBelÃ¸b, Date dato){
 		this.besked = besked;
-		this.indsatBeløb=indsatBeløb;
+		this.indsatBelÃ¸b=indsatBelÃ¸b;
 		this.dato = dato;
 	}
 	
 	public String toString(){
-		return dato.toString()+" "+ besked + " " + indsatBeløb;
+		return dato.toString()+" "+ besked + " " + indsatBelÃ¸b;
 	}
 }

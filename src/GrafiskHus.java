@@ -3,7 +3,7 @@ import java.awt.Graphics;
 public class GrafiskHus implements Tegnbar{
 	int x,y;
 	
-	public void sætPosition(int x, int y) {
+	public void sÃ¦tPosition(int x, int y) {
 		this.x = x;
 		this.y = y;
 	}

@@ -1,53 +1,53 @@
 import java.util.ArrayList;
 
-/** Repræsenterer et raflebæger med flere terninger i */
+/** Reprï¿½senterer et raflebï¿½ger med flere terninger i */
 public class Raflebaeger {
 
 	public ArrayList<Terning> terninger;
 	
-	/** Konstruktør der laver et raflebæger med et antal terninger i */
+	/** Konstruktï¿½r der laver et raflebï¿½ger med et antal terninger i */
 	public Raflebaeger(int antalTerninger){
 		terninger = new ArrayList<Terning>();
 		for (int i=0; i<antalTerninger; i++){
 			Terning t;
 			t = new Terning();
-			tilføj(t);
+			tilfÃ¸j(t);
 		}
 	}
 	
-	/** Tilføjer en terning til bægeret */
-	public void tilføj(Terning t){
+	/** Tilfï¿½jer en terning til bï¿½geret */
+	public void tilfÃ¸j(Terning t){
 		terninger.add(t);
 	}
 	
-	/** Ryster bægeret, så alle terninger bliver kastet */
+	/** Ryster bï¿½geret, sï¿½ alle terninger bliver kastet */
 	public void ryst(){
 		for (Terning t : terninger){
 			t.kast();
 		}
 	}
 	
-	/** Finder summen af terningernes værdier */
+	/** Finder summen af terningernes vï¿½rdier */
 	public int sum(){
 		int resultat=0;
 		for (Terning t : terninger){
-			resultat += t.værdi;
+			resultat += t.vÃ¦rdi;
 		}
 		return resultat;
 	}
 	
-	/** finder antallet af terninger, der viser en bestemt værdi */
-	public int antalDerViser(int værdi){
+	/** finder antallet af terninger, der viser en bestemt vï¿½rdi */
+	public int antalDerViser(int vÃ¦rdi){
 		int resultat=0;
 		for (Terning t : terninger){
-			if (t.værdi == værdi){
+			if (t.vÃ¦rdi == vÃ¦rdi){
 				resultat++;
 			}
 		}
 		return resultat;
 	}
 	
-	/** beskriver bægerets indhold som en streng */
+	/** beskriver bï¿½gerets indhold som en streng */
 	public String toString(){
 		if(toEns()&&!treEns()&&!toPar()) System.out.print("Et par: ");
 		if(treEns()&&!fireEns()&&!hus()) System.out.print("Tre ens: ");
@@ -115,22 +115,22 @@ public class Raflebaeger {
 		while ( antalSeksere < 3 && antalSeksere < 4 ){
 			r.ryst();
 			antalKast++;
-			System.out.println("På slag nr " + antalKast + " blev der slået "+r.toString());
+			System.out.println("Pï¿½ slag nr " + antalKast + " blev der slï¿½et "+r.toString());
 			antalSeksere = r.antalDerViser(6);
-			System.out.println("Der blev slået " + antalSeksere + " seksere\n");
+			System.out.println("Der blev slï¿½et " + antalSeksere + " seksere\n");
 		}
-		System.out.println("Vi slog "+antalSeksere+" seksere på " +antalKast +". forsøg\n");
+		System.out.println("Vi slog "+antalSeksere+" seksere pï¿½ " +antalKast +". forsï¿½g\n");
 		
-		System.out.println("Nu prøver vi at slå 10 gange med 16 terninger: \n");
+		System.out.println("Nu prï¿½ver vi at slï¿½ 10 gange med 16 terninger: \n");
 		antalKast = 0;
 		Raflebaeger r2 = new Raflebaeger(16);
 		for (int i = 0; i<10; i++){
 			r2.ryst();
 			antalKast++;
 			antalSeksere = r2.antalDerViser(6);
-			System.out.println("På slag nr " + antalKast + " blev der slået "+ r2.toString());
+			System.out.println("Pï¿½ slag nr " + antalKast + " blev der slï¿½et "+ r2.toString());
 			System.out.println("Summen af terningerne er: " +r2.sum());
-			System.out.println("Der blev slået " + antalSeksere + " seksere\n");
+			System.out.println("Der blev slï¿½et " + antalSeksere + " seksere\n");
 		}
 	}*/
 }

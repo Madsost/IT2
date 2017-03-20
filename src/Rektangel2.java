@@ -7,7 +7,7 @@ public class Rektangel2 extends Rectangle implements Tegnbar {
 		super(x1,y1,width1,height1);
 	}
 	
-	public void sætPosition(int x1, int y1) {
+	public void sÃ¦tPosition(int x1, int y1) {
 		x = x1;
 		y = y1;
 	}
