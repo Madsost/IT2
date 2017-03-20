@@ -17,7 +17,6 @@ public class GrafiskRaflebaeger extends Raflebaeger implements Tegnbar{
 		g.drawLine(150, 115, 170, 50);
 		g.drawLine(100,115,80,50);
 		g.drawArc(100, 100, 50, 30, 180, 180);
-		
 	}
 	
 
