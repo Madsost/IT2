@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Grafik2 {
 	public static void main(String[] args) {
-		File ind = new File("C:/Users/madso/Dropbox/Semesterprojekt 1/Datafiler/CaseC/Rå data.txt");
+		File ind = new File("C:/Users/madso/Dropbox/Semesterprojekt 1/Datafiler/CaseC/RÃ¥ data.txt");
 		try{ Scanner input = new Scanner(new FileReader(ind));
 		ArrayList<Double> inddata = new ArrayList<>();
 		while(input.hasNext()){
